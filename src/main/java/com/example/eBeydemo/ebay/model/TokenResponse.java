@@ -24,6 +24,7 @@ Reference: https://developer.ebay.com/api-docs/static/oauth-auth-code-grant.html
 import com.google.gson.annotations.SerializedName;
 
 import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * @program: eBey-demo
  * @description
