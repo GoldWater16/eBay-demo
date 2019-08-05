@@ -11,8 +11,17 @@ import java.util.Date;
 
 public class AccessToken {
     private String token;
-    private Date expiresOn;
+    private Date expiresOn;//过期日期
+    private int expiresIn;//过期时间
     private TokenType tokenType;
+
+    public int getExpiresIn() {
+        return expiresIn;
+    }
+
+    public void setExpiresIn(int expiresIn) {
+        this.expiresIn = expiresIn;
+    }
 
     public String getToken() {
         return token;

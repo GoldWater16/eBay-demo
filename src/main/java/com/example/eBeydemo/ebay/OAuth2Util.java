@@ -39,10 +39,12 @@ class OAuth2Util {
         accessToken.setTokenType(TokenType.USER);
         accessToken.setToken(tokenResponse.getAccessToken());
         accessToken.setExpiresOn(generateExpiration(tokenResponse.getExpiresIn()));
+        accessToken.setExpiresIn(tokenResponse.getExpiresIn());
 
         RefreshToken refreshToken = new RefreshToken();
         refreshToken.setToken(tokenResponse.getRefreshToken());
         refreshToken.setExpiresOn(generateExpiration(tokenResponse.getRefreshTokenExpiresIn()));
+        refreshToken.setExpiresIn(tokenResponse.getRefreshTokenExpiresIn());
 
         return new OAuthResponse(Optional.of(accessToken), Optional.of(refreshToken));
     }

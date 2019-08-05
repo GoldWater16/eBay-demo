@@ -8,8 +8,8 @@ package com.example.eBeydemo.ebay;
  **/
 public enum EBayEnvironment {
 
-    PRODUCTION("-litdshop-PRD-725797ef3-078d1c01", "PRD-25797ef3f3e9-8100-418a-ba1b-2ebd", "f0f74ff9-7a34-4cec-8dc5-aa06e843db6f", "_--litdshop-PRD-7-ahlbbrsfc", "https://auth.ebay.com/oauth2/authorize", "https://api.ebay.com/identity/v1/oauth2/token"),
-    SANDBOX("-litdshop-PRD-725797ef3-078d1c01", "PRD-25797ef3f3e9-8100-418a-ba1b-2ebd", "f0f74ff9-7a34-4cec-8dc5-aa06e843db6f", "_--litdshop-PRD-7-ahlbbrsfc", "https://auth.sandbox.ebay.com/oauth2/authorize", "https://api.sandbox.ebay.com/identity/v1/oauth2/token");
+    PRODUCTION("-xxxxxxxxxx-078d1c01", "-xxxxxxxxxx-078d1c01", "-xxxxxxxxxx-078d1c01", "-xxxxxxxxxx-078d1c01", "https://auth.ebay.com/oauth2/authorize", "https://api.ebay.com/identity/v1/oauth2/token"),
+    SANDBOX("-xxxxxxxxxx-078d1c01", "-xxxxxxxxxx-078d1c01", "-xxxxxxxxxx-078d1c01", "-xxxxxxxxxx-078d1c01", "https://auth.sandbox.ebay.com/oauth2/authorize", "https://api.sandbox.ebay.com/identity/v1/oauth2/token");
     private final String appId;
     private final String certId;
     private final String devId;

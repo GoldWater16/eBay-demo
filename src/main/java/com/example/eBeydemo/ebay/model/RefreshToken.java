@@ -10,9 +10,18 @@ import java.util.Date;
  **/
 
 public class RefreshToken {
-    private String token;
-    private Date expiresOn;
+    private String token;//刷新token
+    private Date expiresOn;//过期日期
+    private int expiresIn;//过期时间
     private TokenType tokenType = TokenType.USER;
+
+    public int getExpiresIn() {
+        return expiresIn;
+    }
+
+    public void setExpiresIn(int expiresIn) {
+        this.expiresIn = expiresIn;
+    }
 
     public String getToken() {
         return token;
